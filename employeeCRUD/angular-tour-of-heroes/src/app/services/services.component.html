@@ -1,0 +1,37 @@
+
+
+<div style="text-align:center">
+  <h1>
+    Welcome ...Please register {{ title }}!
+  </h1>
+  <img src="https://img.icons8.com/color/48/000000/password.png">
+  <form action="#0">
+
+    <div>
+      <input type="text" id="first_name" name="first_name" required placeholder=" " />
+      <label for="first_name">First Name</label>
+    </div>
+    
+    <div>
+      <input type="text" id="last_name" name="last_name" required placeholder=" " />
+      <label for="last_name">Last Name</label>
+    </div>
+    
+    <div>
+      <input type="email" id="email" name="email" required placeholder=" " />
+      <label for="email">Email Address</label>
+      <div class="requirements">
+        Must be a valid email address.
+      </div>
+    </div>
+    
+    <div>
+      <input type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+      <label for="password">Password</label>
+      <div class="requirements">
+        Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+      </div>
+    </div>
+    
+     <input type="submit" routerLink="/heroes" value="Enter" />
+    <!-- <button type="text" routerLink="/details">Sign up</button> -->
